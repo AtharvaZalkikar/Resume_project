@@ -1,0 +1,31 @@
+#container{
+    height: auto;
+    width:auto;
+    background-color: black;
+
+    display: flex;
+    /* flex-direction: row; */         /*default value is horiZONTAL*/
+    /* flex-direction: column; */   /* column orientation there is aslo a reverse option for row and columnn */
+    flex-direction:row;
+}
+#container div{
+    height: 200px;
+    width: 200px;
+}
+#div1{
+    background-color: aqua;
+    /* order: 1;                                order property gives priority to elements order 0 is default */
+    flex-grow: 1;
+}
+#div2{
+    background-color: red;        /*order values can be negative*/ /*lower the number higher the priority*/
+    flex-grow: 1;
+}
+#div3{
+    background-color: yellowgreen;  /* order '-1' > order 0> order 1 >order 2 */
+    flex-grow: 1;
+}
+#div4{
+    background-color: blanchedalmond;
+    flex-grow: 1;
+}
